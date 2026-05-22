@@ -1,0 +1,596 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   outline:none;
+   border:none;
+   text-decoration: none;
+   font-family: "Quicksand", sans-serif;
+   transition: 0.2s linear;
+}
+body{
+    background-color: #000;
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+   
+}
+
+/*seção Menu*/
+.header section{
+   display:flex;
+   justify-content:space-around;
+    padding-bottom:1rem;
+   background-color: #000;
+ 
+
+}
+
+.navbar a {
+   margin:0 1rem;
+   font-size: 16px;
+   color:#fff;
+   align-items:center;
+   justify-content:center;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+
+
+   a {
+  
+   color: aliceblue;
+   align-items: center;
+   text-decoration: none;
+}
+   
+
+   .logo{
+       width: 120px;
+       align-items: center;
+       flex-direction: row;
+       display: flex;
+   }
+
+
+
+/*seção serviços*/
+.video{
+    width: 100%; /* Ajusta a largura para 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 500px; /* Define a altura máxima */
+    object-fit: cover; /* Cobre todo o espaço sem distorcer a imagem */
+    margin-bottom: 10px;
+}
+
+.slide-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+/*seção serviços e orçamento*/
+  .titulo {
+    align-items: center;
+  justify-content: center; /* Centraliza os itens flexíveis horizontalmente */
+  width: 100%; /* Define a largura do container */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font:bold;
+  color:#fff;
+
+}
+.logo2{
+  width: 420px;
+       align-items: center;
+       flex-direction: row;
+       display: flex;
+
+}
+
+
+ .titulo  p{
+    text-align: center;
+    font-size:  34px;
+    margin: 20px; 
+    font-weight: bolder;
+  }
+  .titulo  h6{
+    text-align: center;
+    font-size:  15px;
+    margin: 20px; 
+    margin-bottom: 18px;
+  }
+
+  .caracteristica {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+    color:#fff;
+    
+    
+    
+  }
+  
+  .caracteristica .controle {
+    display: flex;
+    flex-direction: row;
+  }
+   .controle{
+    gap: 40px;
+    flex-direction: column;
+   }
+
+
+  .caracteristica .box {
+    text-align: center;
+    z-index: 1;
+
+  }
+  
+  .caracteristica .box  p {
+    font-size: 25px;
+    margin: 20px;
+  }
+  
+  .caracteristica  .box  h1 {
+    font-size: 15px;
+    margin: 15px;
+  }
+  
+  .caracteristica .box  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+.tiulo-peq{
+  position:relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+
+}
+.tiulo-peq::before{
+  content:"";
+  position:absolute;
+  width: 100px;
+  height: 200%;
+  background: linear-gradient(180deg,#fff,#fff);
+  gap:30px;
+  animation: animate 3s linear infinite;
+
+}
+
+.tiulo-peq img {
+  position:relative;
+  z-index: 1;
+ 
+}
+
+
+@keyframes animate {
+  100%{
+      transform:rotate(360deg);
+  }
+  
+}
+.tiulo-peq::after{
+  content:"";
+  position: absolute;
+  background-color: #000508;
+  inset:5px;
+  border-radius: inherit;
+
+
+  
+}
+.tiulo-peq img {
+  position:relative;
+  z-index: 1;
+  width: 240px;
+}
+
+
+
+
+
+
+/*seção frota de carros*/
+ .frota {
+    display: flex; 
+    flex-direction:column;
+    background-color:#808080;
+  }
+  
+  
+   .foto{
+    padding:15px;
+    display: flex;
+    align-items: center;
+    background-color:#808080;
+    flex-direction:row;   
+   
+ }
+ 
+  .frota .foto .content{
+    padding: 2rem;   
+ }
+ 
+ .frota-nome{
+   color:#fff;
+   margin: 20px 0;
+   text-align: center;
+    
+ }
+ .frota .foto .frota-nome h3 {
+    font-size:30px;
+    color:#fff;
+ }
+ 
+ .frota .foto .content p{
+    font-size:20px;
+    color:#fff;
+    padding: 10px 0;
+    text-align: justify;
+ }
+ 
+ 
+
+ .imagem-carrossel{
+  height: 150px;
+}
+
+
+.titulo {
+  align-items: center;
+justify-content: center; /* Centraliza os itens flexíveis horizontalmente */
+width: 100%; /* Define a largura do container */
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+font:bold;
+color:#fff;
+
+}
+
+
+.titulo  p{
+  text-align: center;
+  font-size:  34px;
+  margin: 20px; 
+  font-weight: bolder;
+}
+.titulo  h6{
+  text-align: center;
+  font-size:  18px;
+  margin: 20px; 
+  margin-bottom: 18px;
+}
+
+.contato {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 60px;
+  color:#fff;
+  border-color: #fff;
+  gap:30px;
+  
+  
+  
+}
+
+.contato .formacontato {
+  display: flex;
+
+}
+ .atendimento{
+  gap: 40px;
+  flex-direction: column;
+ }
+
+
+.contato .atendimento {
+  text-align: center;
+  z-index: 1;
+
+}
+
+.contato .atendimento  p {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.contato  .atendimento  h1 {
+  font-size: 15px;
+  margin: 15px;
+}
+
+.contato .atendimento  img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.formacontato{
+  position:relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  border-style: groove;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contato .formacontato:hover{
+  transform: scale(1.05);  
+  box-shadow: 0 0 20px #ffffff49 ;
+}
+
+.formacontato img {
+position:relative;
+z-index: 1;
+
+}
+
+
+@keyframes animate {
+100%{
+    transform:rotate(360deg);
+}
+
+}
+.formacontato::after{
+content:"";
+position: absolute;
+background-color: #000508;
+border-color: #fff;
+inset:5px;
+
+
+
+
+}
+.formacontato img {
+position:relative;
+z-index: 1;
+
+}
+
+
+/*seção habilidades*/
+.habilidades{
+ 
+  display: flex;
+  align-items: center;
+  background-color:#808080;
+  gap:600px;
+  justify-content: center;
+}
+
+.topico-hab{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap:60px;
+ 
+}
+
+.topico{
+  width: 300px;
+  height: 240px;
+  padding: 20px;
+  flex-direction: row;
+  font-size: 16px;
+  color: #000;
+  font-weight: 900;
+  background-color:#fff ;
+  border: none;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+
+/*seção rodape*/
+.rodape{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  margin: 30px;
+  font-size: 25px;
+  margin-bottom: 40px;
+ 
+}
+.rodape .logo{
+  width: 250px;
+}
+
+.rodape .rodape-fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.rodape .rodape-contato a {
+  font-size: 18px;
+  margin: 10px;
+  font-weight: bold;
+
+}
+
+
+.rodape .rodape-contato img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*seção footer*/
+footer {
+  background: rgba(15, 15, 20, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em;
+  padding: 5px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: footerSlideUp 2s ease-in-out;
+
+ 
+}
+
+
+.titulo {
+	-webkit-animation:titulo 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: titulo 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes titulo {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes titulo {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  /*seção RESPONSIVO*/
+
+  @media (max-width: 768px) {
+
+    .navbar a {
+      margin:0 1px;
+      font-size: 10px;
+      color:#fff;
+      align-items:center;
+      text-decoration: none;
+    }
+     
+    .slide-container {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      font-size: 15px;
+      font-weight:500 ;
+    }
+
+   .logo2{
+      width: 200px;
+    }  
+
+    .content{
+      display: none;
+    }
+
+  .caracteristica {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 60px;         
+  }
+
+  .caracteristica .controle {
+     display: flex;
+    flex-direction: column;
+  }
+    
+ 
+.contato {
+  display: flex;
+  flex-direction: column;
+}
+   
+    
+  .topico-hab{
+    flex-direction: column;
+  }
+
+
+
+
+
+    /* Styles for screens smaller than 768px */
+    .header section {
+      flex-direction: column; /* Change to column layout */
+    }
+  
+    .titulo p {
+      font-size: 24px; /* Adjust font size */
+    }
+    
+    
+    /* Other adjustments for smaller screens */
+    .caracteristica {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center;
+      }
+      
+     
+}
+
+
