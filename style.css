@@ -11,7 +11,7 @@
    transition: 0.2s linear;
 }
 body{
-    background-color: #171A4A;
+    background-color: #000000;
     margin:0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
@@ -24,7 +24,7 @@ body{
    display:flex;
    justify-content:space-around;
     padding-bottom:1rem;
-    background-color: #171A4A;
+    background-color: #000000;
 
 }
 
@@ -61,7 +61,7 @@ body{
 .video{
     width: 100%; /* Ajusta a largura para 100% do contêiner pai */
     height: auto; /* Mantém a proporção da imagem */
-    max-height: 500px; /* Define a altura máxima */
+    max-height:800px; /* Define a altura máxima */
     object-fit: cover; /* Cobre todo o espaço sem distorcer a imagem */
     margin-bottom: 10px;
 }
@@ -202,7 +202,7 @@ body{
 .tiulo-peq::after{
   content:"";
   position: absolute;
-    background-color: #171A4A;
+    background-color: #000000;
   inset:5px;
   border-radius: inherit;
 
@@ -371,7 +371,7 @@ z-index: 1;
 .formacontato::after{
 content:"";
 position: absolute;
-background-color: #171A4A;
+background-color: #000000;
 border-color: #fff;
 inset:5px;
 
@@ -383,6 +383,40 @@ inset:5px;
 position:relative;
 z-index: 1;
 
+}
+
+/*seção habilidades*/
+.habilidades1{
+  display: flex;
+  align-items: center;
+  background-color:#5e5c5c6c;
+  gap:600px;
+  justify-content: center;
+}
+.topico-hab1 {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap:60px;
+ 
+}
+
+.topico1{
+  width: 300px;
+  height: 240px;
+  padding: 20px;
+  flex-direction: row;
+  font-size: 16px;
+  color: #000;
+  font-weight: 900;
+  background-color:#fff ;
+  border: none;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+ .imagem-carrossel1{
+  height: 150px;
 }
 
 
@@ -566,6 +600,10 @@ footer {
    
     
   .topico-hab{
+    flex-direction: column;
+  }
+
+   .topico-hab1{
     flex-direction: column;
   }
 
