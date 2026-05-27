@@ -59,13 +59,11 @@ body{
 
 /*seção serviços*/
 .video{
-    width: 100%; /* Ajusta a largura para 100% do contêiner pai */
-    height: auto; /* Mantém a proporção da imagem */
-    max-height:800px; /* Define a altura máxima */
-    object-fit: cover; /* Cobre todo o espaço sem distorcer a imagem */
-    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: block;
 }
-
 .slide-container {
     position: absolute;
     top: 10%;
